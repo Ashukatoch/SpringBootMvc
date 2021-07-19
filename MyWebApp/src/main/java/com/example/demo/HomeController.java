@@ -26,7 +26,7 @@ public class HomeController
 	{
 		//String name=request.getParameter("StudentName");
 		name=name.toLowerCase();
-		String result="Hey "+name+"!";
+		String result="Hey "+name+"!"+"How are You";
 		model.addAttribute("message",result);
 		String m="message";
 		System.out.println(result+" "+model.getAttribute(m));
