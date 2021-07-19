@@ -25,8 +25,8 @@ public class HomeController
 	public String processForm(HttpServletRequest request,Model model,@RequestParam("StudentName") String name) 
 	{
 		//String name=request.getParameter("StudentName");
-		name=name.toUpperCase();
-		String result="Yo "+name+"!";
+		name=name.toLowerCase();
+		String result="Hey "+name+"!";
 		model.addAttribute("message",result);
 		String m="message";
 		System.out.println(result+" "+model.getAttribute(m));
